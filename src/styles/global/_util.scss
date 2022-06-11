@@ -1,0 +1,33 @@
+// ::-webkit-scrollbar {
+//   width: 10px;
+// }
+
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   background-color: #fff;
+// }
+
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: #03294b;
+// }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  height: 100%;
+}
