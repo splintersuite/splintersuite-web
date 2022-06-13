@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Landing from '../components/Landing';
+import Landing from 'components/Landing';
 
 // markup
 const IndexPage = () => {
