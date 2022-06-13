@@ -17,7 +17,7 @@ import Layout from 'src/layouts';
 
 export const wrapPageElement = ({ element }) => {
     return (
-        <MantineProvider>
+        <MantineProvider theme={theme}>
             <ThemeProvider theme={theme}>
                 <Layout>{element}</Layout>
             </ThemeProvider>
