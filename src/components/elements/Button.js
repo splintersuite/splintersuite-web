@@ -26,19 +26,18 @@ const Button = (props) => {
         if (download) {
             const currentOsType = OsSniffer.checkOsType(navigator);
             setOsType(currentOsType);
-            if (osType == 'Windows OS') {
-                setOsIcon(<FontAwesomeIcon icon={faWindows} size={'1x'} />);
-            } else if (osType == 'Macintosh') {
-                setOsIcon(<FontAwesomeIcon icon={faApple} size={'1x'} />);
-            } else if (osType == 'Linux OS') {
-                setOsIcon(<FontAwesomeIcon icon={faLinux} size={'1x'} />);
-            }
-            console.log(osType);
-            console.log(osIcon);
         }
     }, []);
 
-    useEffect(() => {}, [osType, osVersion]);
+    useEffect(() => {
+        if (osType == 'Windows OS') {
+            setOsIcon(<FontAwesomeIcon icon={faWindows} size={'1x'} />);
+        } else if (osType == 'Macintosh') {
+            setOsIcon(<FontAwesomeIcon icon={faApple} size={'1x'} />);
+        } else if (osType == 'Linux OS') {
+            setOsIcon(<FontAwesomeIcon icon={faLinux} size={'1x'} />);
+        }
+    }, [osType, osVersion]);
 
     const handleDownload = () => {};
 
