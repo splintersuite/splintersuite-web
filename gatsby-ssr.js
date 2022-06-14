@@ -11,6 +11,9 @@ import React from 'react';
 import { ThemeProvider } from '@emotion/react';
 import { MantineProvider } from '@mantine/core';
 
+import { renderToString } from 'react-dom/server';
+import { createStylesServer, ServerStyles } from '@mantine/ssr';
+
 import theme from 'theme';
 
 import Layout from './src/layouts';
@@ -23,4 +26,16 @@ export const wrapPageElement = ({ element }) => {
             </ThemeProvider>
         </MantineProvider>
     );
+};
+
+const stylesServer = createStylesServer();
+
+export const replaceRenderer = ({
+    bodyComponent,
+    replaceBodyHTMLString,
+    setHeadComponents,
+}) => {
+    const html = renderToString(bodyComponent);
+    setHeadComponents([<ServerStyles html={html} server={stylesServer} />]);
+    replaceBodyHTMLString(html);
 };
