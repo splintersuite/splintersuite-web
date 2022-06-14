@@ -19,7 +19,7 @@ module.exports = {
         'gatsby-plugin-sitemap',
         `gatsby-plugin-sass`,
         'gatsby-plugin-mdx',
-        'gatsby-plguin-netlify',
+        'gatsby-plugin-netlify',
         'gatsby-plugin-sharp',
         {
             resolve: 'gatsby-plugin-root-import',
