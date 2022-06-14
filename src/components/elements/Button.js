@@ -11,12 +11,11 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import { Button as MantineButton } from '@mantine/core';
-import OsSniffer from '../../utils/osSniffer';
 
 const StyledButton = styled(MantineButton)``;
 
 const Button = (props) => {
-    const { text, size, insertLink, download, ...rest } = props;
+    const { text, size, insertLink, download, leftIcon, ...rest } = props;
     const [osType, setOsType] = useState('');
     const [osVersion, setOsVersion] = useState('');
     const [osIcon, setOsIcon] = useState(<FontAwesomeIcon />);
@@ -28,14 +27,16 @@ const Button = (props) => {
             const currentOsType = OsSniffer.checkOsType(navigator);
             setOsType(currentOsType);
             if (osType == 'Windows OS') {
-                setOsIcon(<FontAwesomeIcon icon={faWindows} />);
+                setOsIcon(<FontAwesomeIcon icon={faWindows} size={'1x'} />);
             } else if (osType == 'Macintosh') {
-                setOsIcon(<FontAwesomeIcon icon={faApple} />);
+                setOsIcon(<FontAwesomeIcon icon={faApple} size={'1x'} />);
             } else if (osType == 'Linux OS') {
-                setOsIcon(<FontAwesomeIcon icon={faLinux} />);
+                setOsIcon(<FontAwesomeIcon icon={faLinux} size={'1x'} />);
             }
+            console.log(osType);
+            console.log(osIcon);
         }
-    }, [download]);
+    }, []);
 
     useEffect(() => {}, [osType, osVersion]);
 
@@ -46,7 +47,7 @@ const Button = (props) => {
             size={size}
             {...rest}
             component={insertLink ? 'a' : null}
-            leftIcon={download ? osIcon : null}
+            leftIcon={download ? osIcon : leftIcon}
         >
             {text}
         </StyledButton>
