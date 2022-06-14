@@ -28,12 +28,12 @@ const Navbar = () => {
         <Nav>
             <Logo src={logo} />
             <Button
-                hasLink={true}
+                insertLink={true}
                 href="https://discord.com"
                 target="_blank"
                 text="Join Discord"
                 color="dark"
-                leftIcon={<FontAwesomeIcon icon={faDiscord} size={14} />}
+                leftIcon={<FontAwesomeIcon icon={faDiscord} size={'1x'} />}
             />
         </Nav>
     );

@@ -4,6 +4,8 @@ import Button from 'components/elements/Button';
 
 import { Text, Title } from '@mantine/core';
 
+import Content from 'content/home.yaml';
+
 import hero from '../assets/hero.jpg';
 
 const PageBackground = styled.div`
@@ -31,12 +33,9 @@ const IndexPage = () => {
     return (
         <PageBackground>
             <Box>
-                <Title order={1}>Rent your cards with ease</Title>
-                <Text>
-                    SplinterSuite automatically and intelligently rents out your
-                    cards and helps you earn passively
-                </Text>
-                <Button size="lg" text="Download Now" />
+                <Title order={1}>{Content.mainHeading}</Title>
+                <Text>{Content.mainSubHeading}</Text>
+                <Button size="lg" text="Download Now" download={true} />
             </Box>
         </PageBackground>
     );
