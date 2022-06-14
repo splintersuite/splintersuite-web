@@ -14,6 +14,7 @@ module.exports = {
             },
         },
         'gatsby-plugin-image',
+        'gatsby-plugin-mantine',
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sitemap',
         `gatsby-plugin-sass`,
