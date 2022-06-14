@@ -11,6 +11,7 @@ import hero from '../assets/hero.jpg';
 const PageBackground = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
     min-height: 100vh;
     color: ${({ theme }) => theme.colors.white};
     background: ${({ theme }) => theme.colors.grey[900]};
@@ -27,6 +28,9 @@ const Box = styled.div`
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    p {
+        margin: 1.5em 0;
+    }
 `;
 
 const IndexPage = () => {
@@ -34,7 +38,7 @@ const IndexPage = () => {
         <PageBackground>
             <Box>
                 <Title order={1}>{Content.mainHeading}</Title>
-                <Text>{Content.mainSubHeading}</Text>
+                <Text component="p">{Content.mainSubHeading}</Text>
                 <Button size="lg" text="Download Now" download={true} />
             </Box>
         </PageBackground>
