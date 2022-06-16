@@ -39,15 +39,18 @@ const Container = styled.footer`
     flex-direction: column;
     background-color: ${({ theme }) => theme.colors.grey};
     padding: 5vh 5vw;
-    @media all and (min-width: 600px) {
-        flex-direction: row;
-        justify-content: space-between;
-    }
     button {
         margin-bottom: 2em;
     }
     a {
-        align-self: flex-end;
+        align-self: center;
+    }
+    @media all and (min-width: 600px) {
+        flex-direction: row;
+        justify-content: space-between;
+        a {
+            align-self: flex-end;
+        }
     }
 `;
 
@@ -55,15 +58,30 @@ const Section = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    max-width: 300px;
+    &:nth-of-type(2) {
+        margin-top: 5vh;
+    }
     p {
         color: white;
         font-size: 1.2em;
+    }
+    @media all and (min-width: 800px) {
+        &:nth-of-type(2) {
+            margin-top: 0;
+        }
     }
 `;
 
 const Logo = styled.img`
     height: 32px;
     width: auto;
+    align-self: center;
+    @media all and (min-width: 800px) {
+        align-self: flex-start;
+    }
 `;
 
 export default Footer;
