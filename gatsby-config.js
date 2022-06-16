@@ -13,6 +13,14 @@ module.exports = {
                 trackingId: 'asdasdasdadasdasda',
             },
         },
+        {
+            resolve: 'gatsby-plugin-web-font-loader',
+            options: {
+                google: {
+                    families: ['Source Sans Pro'],
+                },
+            },
+        },
         'gatsby-plugin-image',
         'gatsby-plugin-mantine',
         'gatsby-plugin-react-helmet',
