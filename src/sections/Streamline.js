@@ -7,7 +7,7 @@ import Content from 'content/home.yaml';
 
 const Streamline = () => {
     return (
-        <Container>
+        <Container id="streamline">
             <Title color="white" order={5} align="center">
                 {Content.streamlineSubHeadline}
             </Title>
@@ -69,10 +69,11 @@ const CardContainer = styled.ul`
         h3,
         p {
             color: white;
+            font-size: 1.8em;
         }
         h3 {
             font-weight: 700;
-            margin-bottom: 1em;
+            margin-bottom: 0.75em;
             font-size: 2.4em;
         }
         > div:first-of-type {
@@ -98,7 +99,11 @@ const CardContainer = styled.ul`
                 }
             }
             h3 {
-                font-size: 2.8em;
+                font-size: 4em;
+                margin-bottom: 0.5em;
+            }
+            p {
+                font-size: 2.4em;
             }
         }
     }

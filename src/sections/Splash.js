@@ -9,6 +9,15 @@ import Content from 'content/home.yaml';
 import hero from '../assets/hero.jpg';
 
 const Splash = () => {
+    const handleLearnMoreClick = (event) => {
+        event.preventDefault();
+        const streamlineSection = document.getElementById('streamline');
+        window.scrollTo({
+            top: streamlineSection.offsetTop - 76,
+            left: 0,
+            behavior: 'smooth',
+        });
+    };
     return (
         <Container>
             <CtaContainer>
@@ -28,6 +37,7 @@ const Splash = () => {
                 weight="700"
                 className="learn-more"
                 href="#streamline"
+                onClick={handleLearnMoreClick}
             >
                 Learn More
             </Text>
@@ -51,8 +61,8 @@ const Container = styled.section`
         position: relative;
         &:after {
             content: '';
-            width: 1em;
-            height: 1em;
+            width: 0.6em;
+            height: 0.6em;
             border-bottom: 2px solid white;
             border-right: 2px solid white;
             position: absolute;
@@ -78,11 +88,15 @@ const CtaContainer = styled.div`
         margin-top: 0.5em;
         margin-bottom: 1.5em;
         padding: 0 1em;
+        max-width: 440px;
     }
     .supported {
         font-size: 1.2em;
         font-style: italic;
         margin-top: 0.5em;
+    }
+    > button {
+        margin-top: 1.5em;
     }
     @media all and (min-width: 768px) {
         h1 {

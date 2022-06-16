@@ -29,8 +29,8 @@ howItWorksList:
   body: "View insights about your bot’s performance in the dashboard."
 - title: 4. Pay your invoice
   body: We charge 10% of the rental earnings managed by our bot.
-howItWorksScreenshotOne: "https://via.placeholder.com/600x600"
-howItWorksScreenshotTwo: "https://via.placeholder.com/600x600"
+howItWorksScreenshotOne: "images/screenshot-1.png"
+howItWorksScreenshotTwo: "images/screenshot-2.png"
 
 downloadHeadline: Ready to start earning?
 downloadSubHeadline: List your cards for rental with a single click.

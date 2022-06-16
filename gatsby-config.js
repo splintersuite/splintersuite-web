@@ -28,6 +28,16 @@ module.exports = {
         `gatsby-plugin-sass`,
         'gatsby-plugin-mdx',
         'gatsby-plugin-netlify',
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `SplinterSuite`,
+                short_name: `SplinterSuite`,
+                start_url: `/`,
+                display: `standalone`,
+                icon: `favicon.png`,
+            },
+        },
         'gatsby-plugin-sharp',
         {
             resolve: 'gatsby-plugin-root-import',

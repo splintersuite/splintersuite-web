@@ -23,9 +23,12 @@ const HowItWorks = () => {
                     ))}
                 </List>
             </Group>
-            <Group>
-                <Image src={Content.howItWorksScreenshotOne} />
+            <Group className="has-screenshots">
                 <Image src={Content.howItWorksScreenshotTwo} />
+                <Image
+                    src={Content.howItWorksScreenshotOne}
+                    className="overlap"
+                />
             </Group>
         </Container>
     );
@@ -37,7 +40,7 @@ const Container = styled.section`
     justify-content: center;
     background-color: ${({ theme }) => theme.colors.black};
     width: 100%;
-    padding: 5vh 5vw;
+    padding: 5vh 5vw 15vh 5vw;
     @media all and (min-width: 800px) {
         flex-direction: row;
         flex-wrap: wrap;
@@ -50,8 +53,15 @@ const Container = styled.section`
 `;
 
 const Group = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     img {
-        max-width: 250px;
+        max-width: 500px;
+        align-self: center;
+        margin-bottom: 4em;
+        border-radius: 2em;
+        box-shadow: 0px 14px 40px 10px rgba(0, 0, 0, 0.3);
     }
     ol {
         max-width: 500px;
@@ -59,6 +69,9 @@ const Group = styled.div`
     }
     li {
         margin: 1.5em 0;
+        &:first-of-type {
+            margin-top: 0;
+        }
         h3,
         p {
             color: white;
@@ -68,6 +81,25 @@ const Group = styled.div`
         }
         p {
             font-size: 0.9em;
+        }
+    }
+    &.has-screenshots {
+        position: relative;
+        .overlap {
+            position: absolute;
+            top: 20vh;
+            left: 2.5vw;
+            width: 100%;
+        }
+    }
+    @media all and (min-width: 800px) {
+        li {
+            h3 {
+                font-size: 2.2em;
+            }
+            p {
+                font-size: 1.35em;
+            }
         }
     }
 `;
