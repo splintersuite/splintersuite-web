@@ -46,7 +46,6 @@ const Container = styled.section`
     }
     button {
         margin: 1em 0;
-        box-shadow: 0px 14px 40px 0px rgba(0, 0, 0, 0.3);
     }
     @media all and (min-width: 800px) {
         h2 {

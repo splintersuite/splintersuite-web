@@ -20,7 +20,7 @@ const Nav = styled.nav`
     z-index: 10;
     transition: 0.3s ease-in-out all;
     &.has-scrolled {
-        background-color: ${({ theme }) => theme.colors.primary[5]};
+        background-color: ${({ theme }) => theme.colors.grey};
     }
 `;
 

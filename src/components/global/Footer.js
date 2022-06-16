@@ -44,12 +44,10 @@ const Container = styled.footer`
         justify-content: space-between;
     }
     button {
-        box-shadow: 0px 14px 40px 10px rgba(0, 0, 0, 0.3);
         margin-bottom: 2em;
     }
     a {
         align-self: flex-end;
-        box-shadow: 0px 20px 40px 10px rgba(0, 0, 0, 0.3);
     }
 `;
 

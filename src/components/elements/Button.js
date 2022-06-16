@@ -12,7 +12,9 @@ import {
 
 import { Button as MantineButton } from '@mantine/core';
 
-const StyledButton = styled(MantineButton)``;
+const StyledButton = styled(MantineButton)`
+    box-shadow: 0px 14px 40px 10px rgba(0, 0, 0, 0.3);
+`;
 
 const Button = (props) => {
     const { text, size, insertLink, download, leftIcon, ...rest } = props;
