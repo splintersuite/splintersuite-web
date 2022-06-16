@@ -37,6 +37,7 @@ const Footer = () => {
 const Container = styled.footer`
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: ${({ theme }) => theme.colors.grey};
     padding: 5vh 5vw;
     button {
