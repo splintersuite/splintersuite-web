@@ -40,10 +40,11 @@ const Container = styled.section`
     justify-content: center;
     background-color: ${({ theme }) => theme.colors.black};
     width: 100%;
-    padding: 5vh 5vw 15vh 5vw;
+    padding: 5vh 7.5vw 30vh 7.5vw;
     @media all and (min-width: 800px) {
         flex-direction: row;
         flex-wrap: wrap;
+        padding: 5vh 5vw 30vh 5vw;
     }
     h2 {
         color: white;
