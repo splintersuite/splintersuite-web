@@ -19,8 +19,8 @@ const IndexPage = () => {
         <Container>
             <Splash />
             <Streamline />
-            <HowItWorks />
             <Download />
+            <HowItWorks />
         </Container>
     );
 };
