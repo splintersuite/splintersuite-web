@@ -8,6 +8,33 @@ import Content from 'content/home.yaml';
 
 import hero from '../assets/hero.jpg';
 
+const Splash = () => {
+    return (
+        <Container>
+            <CtaContainer>
+                <Title order={1} size="md">
+                    {Content.mainHeading}
+                </Title>
+                <Text component="p" size="lg">
+                    {Content.mainSubHeading}
+                </Text>
+                <Button size="lg" text="Download Now" download={true} />
+                <Text size="s" component="p" className="supported">
+                    Windows, Mac and Linux supported
+                </Text>
+            </CtaContainer>
+            <Text
+                component="a"
+                weight="700"
+                className="learn-more"
+                href="#streamline"
+            >
+                Learn More
+            </Text>
+        </Container>
+    );
+};
+
 const Container = styled.section`
     display: flex;
     flex-direction: column;
@@ -61,32 +88,5 @@ const CtaContainer = styled.div`
         }
     }
 `;
-
-const Splash = () => {
-    return (
-        <Container>
-            <CtaContainer>
-                <Title order={1} size="md">
-                    {Content.mainHeading}
-                </Title>
-                <Text component="p" size="lg">
-                    {Content.mainSubHeading}
-                </Text>
-                <Button size="lg" text="Download Now" download={true} />
-                <Text size="s" component="p" className="supported">
-                    Windows, Mac and Linux supported
-                </Text>
-            </CtaContainer>
-            <Text
-                component="a"
-                weight="700"
-                className="learn-more"
-                href="#streamline"
-            >
-                Learn More
-            </Text>
-        </Container>
-    );
-};
 
 export default Splash;

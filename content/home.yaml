@@ -29,3 +29,6 @@ howItWorksList:
   body: "View insights about your bot’s performance in the dashboard."
 - title: Pay your invoice
   body: We charge 10% of the rental earnings managed by our bot.
+
+downloadHeadline: Ready to start earning?
+downloadSubHeadline: List your cards for rental with a single click.

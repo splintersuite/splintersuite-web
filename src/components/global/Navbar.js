@@ -45,7 +45,7 @@ const Navbar = () => {
     });
     return (
         <Nav className={navbar ? 'has-scrolled' : ''}>
-            <Logo src={logo} />
+            <Logo src={logo} alt="Splintersuite Logo" />
             <Button
                 insertLink={true}
                 href="https://discord.gg/pnYsjYXKpf"
