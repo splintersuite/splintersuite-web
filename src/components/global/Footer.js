@@ -39,7 +39,7 @@ const Container = styled.footer`
     flex-direction: column;
     align-items: center;
     background-color: ${({ theme }) => theme.colors.grey};
-    padding: 5vh 5vw;
+    padding: 10vh 10vw;
     button {
         margin-bottom: 2em;
     }
@@ -49,6 +49,7 @@ const Container = styled.footer`
     @media all and (min-width: 600px) {
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-start;
         a {
             align-self: flex-end;
         }
