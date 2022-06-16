@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 
 import Splash from 'sections/Splash';
 import Streamline from 'sections/Streamline';
+import HowItWorks from 'sections/HowItWorks';
 import Download from 'sections/Download';
 
 const Container = styled.main`
@@ -18,6 +19,7 @@ const IndexPage = () => {
         <Container>
             <Splash />
             <Streamline />
+            <HowItWorks />
             <Download />
         </Container>
     );

@@ -21,14 +21,16 @@ streamlineCards:
 
 howItWorksHeadline: How it Works
 howItWorksList:
-- title: Login
+- title: 1. Login
   body: Login with your Posting Key. We recommend using a secondary account dedicated to rentals.
-- title: Start your bot
+- title: 2. Start your bot
   body: "Download the app, launch it, and press start. It’s really that easy."
-- title: Track your earnings
+- title: 3. Track your earnings
   body: "View insights about your bot’s performance in the dashboard."
-- title: Pay your invoice
+- title: 4. Pay your invoice
   body: We charge 10% of the rental earnings managed by our bot.
+howItWorksScreenshotOne: "https://via.placeholder.com/600x600"
+howItWorksScreenshotTwo: "https://via.placeholder.com/600x600"
 
 downloadHeadline: Ready to start earning?
 downloadSubHeadline: List your cards for rental with a single click.
