@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 
 import logo from 'assets/logo.png';
@@ -17,6 +17,11 @@ const Nav = styled.nav`
     left: 0px;
     display: flex;
     justify-content: space-between;
+    z-index: 10;
+    transition: 0.3s ease-in-out all;
+    &.has-scrolled {
+        background-color: ${({ theme }) => theme.colors.primary[5]};
+    }
 `;
 
 const Logo = styled.img`
@@ -24,12 +29,26 @@ const Logo = styled.img`
 `;
 
 const Navbar = () => {
+    const [navbar, setNavbar] = useState(false);
+
+    const changeBackground = () => {
+        console.log(window.scrollY);
+        if (window.scrollY >= 76) {
+            setNavbar(true);
+        } else {
+            setNavbar(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeBackground);
+    });
     return (
-        <Nav>
+        <Nav className={navbar ? 'has-scrolled' : ''}>
             <Logo src={logo} />
             <Button
                 insertLink={true}
-                href="https://discord.com"
+                href="https://discord.gg/pnYsjYXKpf"
                 target="_blank"
                 text="Join Discord"
                 color="dark"

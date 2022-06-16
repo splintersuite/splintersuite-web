@@ -1,2 +1,31 @@
 mainHeading: Rent your cards with ease
 mainSubHeading: SplinterSuite is a Splinterlands bot that automatically and intelligently lists your cards for rental
+mainSupported: Mac, Windows, and Linux supported
+
+streamlineHeadline: Streamline your rentals
+streamlineSubHeadline: Simple. Secure. Effective.
+
+streamlineCards:
+- title: Simple
+  body: List your cards for rental with the click of a button and let our algorithm do the rest.
+  image: "images/streamline-1.png"
+  imageAlt: Person relaxing on couch
+- title: Secure
+  body: SplinterSuite is a desktop app for a reason. Your key is safely stored with our industry standard encryption.
+  image: "images/secure-2.png"
+  imageAlt: Person standing next to server with a shield
+- title: Effective
+  body: Our algorithm uses the combined experience of whales and active renters to maximize your DEC on every card.
+  image: "images/effective-3.png"
+  imageAlt: Person viewing charts and diagrams
+
+howItWorksHeadline: How it Works
+howItWorksList:
+- title: Login
+  body: Login with your Posting Key. We recommend using a secondary account dedicated to rentals.
+- title: Start your bot
+  body: "Download the app, launch it, and press start. It’s really that easy."
+- title: Track your earnings
+  body: "View insights about your bot’s performance in the dashboard."
+- title: Pay your invoice
+  body: We charge 10% of the rental earnings managed by our bot.
