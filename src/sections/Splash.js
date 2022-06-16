@@ -47,7 +47,7 @@ const Container = styled.section`
     background-size: cover;
     width: 100%;
     .learn-more {
-        margin-bottom: 4vh;
+        margin-bottom: 7vh;
         position: relative;
         &:after {
             content: '';
@@ -70,17 +70,19 @@ const CtaContainer = styled.div`
     align-items: center;
     max-width: 600px;
     text-align: center;
-    margin-top: 30vh;
+    margin-top: 25vh;
     h1 {
         font-size: 2.8em;
     }
     p {
-        margin: 1.5em 0;
+        margin-top: 0.5em;
+        margin-bottom: 1.5em;
         padding: 0 1em;
     }
     .supported {
-        font-size: 1.4em;
+        font-size: 1.2em;
         font-style: italic;
+        margin-top: 0.5em;
     }
     @media all and (min-width: 768px) {
         h1 {

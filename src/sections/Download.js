@@ -45,7 +45,13 @@ const Container = styled.section`
         margin: 0.5em 0;
     }
     button {
-        margin: 1em 0;
+        margin-top: 0.5em;
+        margin-bottom: 0.25em;
+    }
+    .supported {
+        font-size: 1.2em;
+        margin-top: 0.15em;
+        font-style: italic;
     }
     @media all and (min-width: 800px) {
         h2 {
@@ -53,9 +59,6 @@ const Container = styled.section`
         }
         p {
             font-size: 1.8em;
-            &.supported {
-                font-size: 1.6em;
-            }
         }
     }
 `;
