@@ -41,15 +41,18 @@ const Container = styled.section`
     background-color: ${({ theme }) => theme.colors.black};
     width: 100%;
     padding: 5vh 7.5vw 30vh 7.5vw;
-    @media all and (min-width: 800px) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 5vh 5vw 30vh 5vw;
-    }
     h2 {
         color: white;
         width: 100%;
         margin-bottom: 2em;
+    }
+    @media all and (min-width: 800px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 5vh 5vw 30vh 5vw;
+        h2 {
+            font-size: 4em;
+        }
     }
 `;
 
@@ -69,7 +72,7 @@ const Group = styled.div`
         margin-right: 5vw;
     }
     li {
-        margin: 1.5em 0;
+        margin: 2em 0;
         &:first-of-type {
             margin-top: 0;
         }
