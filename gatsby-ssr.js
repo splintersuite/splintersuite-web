@@ -8,12 +8,17 @@
 
 import React from 'react';
 
+import { renderToString } from 'react-dom/server';
+import { createStylesServer, ServerStyles } from '@mantine/ssr';
+
 import { ThemeProvider } from '@emotion/react';
 import { MantineProvider } from '@mantine/core';
 
 import theme from 'theme';
 
 import Layout from 'src/layouts';
+
+const stylesServer = createStylesServer();
 
 export const wrapPageElement = ({ element }) => {
     return (
@@ -23,4 +28,14 @@ export const wrapPageElement = ({ element }) => {
             </ThemeProvider>
         </MantineProvider>
     );
+};
+
+export const replaceRenderer = ({
+    bodyComponent,
+    replaceBodyHTMLString,
+    setHeadComponents,
+}) => {
+    const html = renderToString(bodyComponent);
+    setHeadComponents([<ServerStyles html={html} server={stylesServer} />]);
+    replaceBodyHTMLString(html);
 };
