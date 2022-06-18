@@ -10,6 +10,7 @@ import React from 'react';
 
 import { renderToString } from 'react-dom/server';
 import { createStylesServer, ServerStyles } from '@mantine/ssr';
+import { renderStylesToString } from '@emotion/server';
 
 import { ThemeProvider } from '@emotion/react';
 import { MantineProvider } from '@mantine/core';
@@ -35,7 +36,7 @@ export const replaceRenderer = ({
     replaceBodyHTMLString,
     setHeadComponents,
 }) => {
-    const html = renderToString(bodyComponent);
+    const html = renderStylesToString(renderToString(bodyComponent));
     setHeadComponents([<ServerStyles html={html} server={stylesServer} />]);
     replaceBodyHTMLString(html);
 };
