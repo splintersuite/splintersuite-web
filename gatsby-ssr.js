@@ -37,6 +37,6 @@ export const wrapPageElement = ({ element }) => {
 //     setHeadComponents,
 // }) => {
 //     const html = renderStylesToString(renderToString(bodyComponent));
-//     setHeadComponents([<ServerStyles html={html} server={stylesServer} />]);
+
 //     replaceBodyHTMLString(html);
 // };
