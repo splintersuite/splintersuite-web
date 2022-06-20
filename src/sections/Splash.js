@@ -27,7 +27,12 @@ const Splash = () => {
                 <Text component="p" size="lg">
                     {Content.mainSubHeading}
                 </Text>
-                <Button size="lg" text="Download Now" download={true} />
+                <Button
+                    size="lg"
+                    text="Download Now"
+                    download={true}
+                    insertLink={true}
+                />
                 <Text size="s" component="p" className="supported">
                     Windows, Mac and Linux supported
                 </Text>

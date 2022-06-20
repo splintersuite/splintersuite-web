@@ -16,6 +16,7 @@ const Download = () => {
                 text="Download Now"
                 color="dark"
                 download={true}
+                insertLink={true}
             />
             <Text size="s" component="p" className="supported">
                 Windows, Mac and Linux supported
@@ -44,7 +45,7 @@ const Container = styled.section`
     p:first-of-type {
         margin: 0.5em 0;
     }
-    button {
+    a {
         margin-top: 0.5em;
         margin-bottom: 0.25em;
     }

@@ -20,7 +20,12 @@ const Footer = () => {
                 </Text>
             </Section>
             <Section>
-                <Button size="lg" text="Download Now" download={true} />
+                <Button
+                    size="lg"
+                    text="Download Now"
+                    download={true}
+                    insertLink={true}
+                />
                 <Button
                     insertLink={true}
                     href="https://discord.gg/pnYsjYXKpf"
@@ -40,7 +45,7 @@ const Container = styled.footer`
     align-items: center;
     background-color: ${({ theme }) => theme.colors.grey};
     padding: 10vh 10vw;
-    button {
+    a {
         margin-bottom: 2em;
     }
     a {
