@@ -17,10 +17,11 @@ const StyledButton = styled(MantineButton)`
 `;
 
 const Button = (props) => {
-    const { text, size, insertLink, download, leftIcon, ...rest } = props;
+    const { text, size, insertLink, download, leftIcon, href, ...rest } = props;
     const [osType, setOsType] = useState('');
     const [osVersion, setOsVersion] = useState('');
     const [osIcon, setOsIcon] = useState(<FontAwesomeIcon />);
+    const [downloadUrl, setDownloadUrl] = useState();
 
     const OsSniffer = new OsSnifferClass();
 
@@ -28,15 +29,18 @@ const Button = (props) => {
         if (download) {
             const currentOsType = OsSniffer.checkOsType(navigator);
             setOsType(currentOsType);
+            setDownloadUrl(
+                `https://splintersuite-updater-zjqp.vercel.app/download/${currentOsType}`
+            );
         }
     }, []);
 
     useEffect(() => {
-        if (osType == 'Windows OS') {
+        if (osType == 'win32') {
             setOsIcon(<FontAwesomeIcon icon={faWindows} size={'1x'} />);
-        } else if (osType == 'Macintosh') {
+        } else if (osType == 'darwin') {
             setOsIcon(<FontAwesomeIcon icon={faApple} size={'1x'} />);
-        } else if (osType == 'Linux OS') {
+        } else if (osType == 'deb') {
             setOsIcon(<FontAwesomeIcon icon={faLinux} size={'1x'} />);
         }
     }, [osType, osVersion]);
@@ -49,6 +53,7 @@ const Button = (props) => {
             {...rest}
             component={insertLink ? 'a' : null}
             leftIcon={download ? osIcon : leftIcon}
+            href={downloadUrl ? downloadUrl : href}
         >
             {text}
         </StyledButton>
