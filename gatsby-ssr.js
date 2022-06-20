@@ -31,15 +31,12 @@ export const wrapPageElement = ({ element }) => {
     );
 };
 
-export const onRenderBody = ({ setHeadComponents }) => {
-    setHeadComponents([<ServerStyles html={html} server={stylesServer} />]);
-};
-
-export const replaceRenderer = ({
-    bodyComponent,
-    replaceBodyHTMLString,
-    setHeadComponents,
-}) => {
-    const html = renderStylesToString(renderToString(bodyComponent));
-    replaceBodyHTMLString(html);
-};
+// export const replaceRenderer = ({
+//     bodyComponent,
+//     replaceBodyHTMLString,
+//     setHeadComponents,
+// }) => {
+//     const html = renderStylesToString(renderToString(bodyComponent));
+//     setHeadComponents([<ServerStyles html={html} server={stylesServer} />]);
+//     replaceBodyHTMLString(html);
+// };

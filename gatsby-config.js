@@ -6,30 +6,30 @@ module.exports = {
         siteUrl: `https://www.yourdomain.tld`,
     },
     plugins: [
-        // {
-        //     resolve: `gatsby-plugin-emotion`,
-        //     options: {
-        //         // Accepts the following options, all of which are defined by `@emotion/babel-plugin` plugin.
-        //         // The values for each key in this example are the defaults the plugin uses.
-        //         cssPropOptimization: true,
-        //     },
-        // },
+        {
+            resolve: `gatsby-plugin-emotion`,
+            options: {
+                // Accepts the following options, all of which are defined by `@emotion/babel-plugin` plugin.
+                // The values for each key in this example are the defaults the plugin uses.
+                cssPropOptimization: true,
+            },
+        },
         {
             resolve: 'gatsby-plugin-google-analytics',
             options: {
                 trackingId: 'asdasdasdadasdasda',
             },
         },
-        {
-            resolve: 'gatsby-plugin-web-font-loader',
-            options: {
-                google: {
-                    families: ['Source Sans Pro'],
-                },
-            },
-        },
+        // {
+        //     resolve: 'gatsby-plugin-web-font-loader',
+        //     options: {
+        //         google: {
+        //             families: ['Source Sans Pro'],
+        //         },
+        //     },
+        // },
         'gatsby-plugin-image',
-        // 'gatsby-plugin-mantine',
+        'gatsby-plugin-mantine',
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sitemap',
         `gatsby-plugin-sass`,
