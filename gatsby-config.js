@@ -7,14 +7,6 @@ module.exports = {
     },
     plugins: [
         {
-            resolve: `gatsby-plugin-emotion`,
-            options: {
-                // Accepts the following options, all of which are defined by `@emotion/babel-plugin` plugin.
-                // The values for each key in this example are the defaults the plugin uses.
-                cssPropOptimization: true,
-            },
-        },
-        {
             resolve: 'gatsby-plugin-google-analytics',
             options: {
                 trackingId: 'asdasdasdadasdasda',
@@ -34,6 +26,7 @@ module.exports = {
         'gatsby-plugin-sitemap',
         `gatsby-plugin-sass`,
         'gatsby-plugin-mdx',
+        `gatsby-plugin-styled-components`,
         'gatsby-plugin-netlify',
         {
             resolve: `gatsby-plugin-manifest`,

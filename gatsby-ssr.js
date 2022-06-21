@@ -10,9 +10,8 @@ import React from 'react';
 
 import { renderToString } from 'react-dom/server';
 import { createStylesServer, ServerStyles } from '@mantine/ssr';
-import { renderStylesToString } from '@emotion/server';
 
-import { ThemeProvider } from '@emotion/react';
+import { ThemeProvider } from 'styled-components';
 import { MantineProvider } from '@mantine/core';
 
 import theme from 'theme';

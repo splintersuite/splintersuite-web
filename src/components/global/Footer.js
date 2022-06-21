@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import Button from 'components/elements/Button';
 import logo from 'assets/logo.png';
 

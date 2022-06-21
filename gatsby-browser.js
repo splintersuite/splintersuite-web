@@ -8,7 +8,7 @@
 
 import React from 'react';
 
-import { ThemeProvider } from '@emotion/react';
+import { ThemeProvider } from 'styled-components';
 import { MantineProvider } from '@mantine/core';
 
 import theme from 'theme';
