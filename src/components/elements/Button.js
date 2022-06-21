@@ -10,11 +10,13 @@ import {
     faLinux,
 } from '@fortawesome/free-brands-svg-icons';
 
-import { Button as MantineButton } from '@mantine/core';
+import { Button as MantineButton, createStyles } from '@mantine/core';
 
-const StyledButton = styled(MantineButton)`
-    box-shadow: 0px 14px 40px 10px rgba(0, 0, 0, 0.3);
-`;
+const useStyles = createStyles((theme) => ({
+    shadow: {
+        boxShadow: `0px 14px 40px 10px rgba(0, 0, 0, 0.3)`,
+    },
+}));
 
 const Button = (props) => {
     const { text, size, insertLink, download, leftIcon, href, ...rest } = props;
@@ -23,6 +25,7 @@ const Button = (props) => {
     const [osIcon, setOsIcon] = useState(<FontAwesomeIcon />);
     const [downloadUrl, setDownloadUrl] = useState();
 
+    const { classes } = useStyles();
     const OsSniffer = new OsSnifferClass();
 
     useEffect(() => {
@@ -48,15 +51,16 @@ const Button = (props) => {
     const handleDownload = () => {};
 
     return (
-        <StyledButton
+        <MantineButton
             size={size}
             {...rest}
             component={insertLink ? 'a' : null}
             leftIcon={download ? osIcon : leftIcon}
             href={downloadUrl ? downloadUrl : href}
+            className={classes.shadow}
         >
             {text}
-        </StyledButton>
+        </MantineButton>
     );
 };
 

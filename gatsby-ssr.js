@@ -11,14 +11,14 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { createStylesServer, ServerStyles } from '@mantine/ssr';
 
+import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
+
 import { ThemeProvider } from 'styled-components';
 import { MantineProvider } from '@mantine/core';
 
 import theme from 'theme';
 
 import Layout from 'src/layouts';
-
-const stylesServer = createStylesServer();
 
 export const wrapPageElement = ({ element }) => {
     return (
