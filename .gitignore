@@ -24,3 +24,10 @@ yarn-error.log*
 
 .cache/
 public
+
+# yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
