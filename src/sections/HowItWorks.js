@@ -49,6 +49,7 @@ const Container = styled.section`
     @media all and (min-width: 800px) {
         flex-direction: row;
         flex-wrap: wrap;
+        align-content: center;
         padding: 5vh 5vw 30vh 5vw;
         h2 {
             font-size: 4em;

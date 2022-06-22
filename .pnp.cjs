@@ -80,6 +80,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-is", "npm:18.2.0"],\
             ["react-scripts", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:5.0.1"],\
             ["sass", "npm:1.52.3"],\
+            ["sass-loader", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:13.0.0"],\
             ["styled-components", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:5.3.5"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
@@ -10734,7 +10735,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["caniuse-lite", "npm:1.0.30001358"],\
             ["electron-to-chromium", "npm:1.4.164"],\
             ["node-releases", "npm:2.0.5"],\
-            ["update-browserslist-db", "npm:1.0.0"]\
+            ["update-browserslist-db", "virtual:4a8a9b105ce610732c027265551ce479422069b814ca943972f1fa93d703af9c4beaa1ecac4563541c3cd0ccb018f550b878f8262c9bb047838cda83d35550aa#npm:1.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -26037,6 +26038,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
+        ["npm:13.0.0", {\
+          "packageLocation": "./.yarn/cache/sass-loader-npm-13.0.0-0cbb09f3b3-f7af03813d.zip/node_modules/sass-loader/",\
+          "packageDependencies": [\
+            ["sass-loader", "npm:13.0.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
         ["virtual:0a0e4f4082e2118f81ec4580753109d2bff0fd23c7eef78bf0b864cab5b9b898d31b3ad4c77bd1f99a9b44febe5e4c72f2ce82349d5101ada7c1b6059047789f#npm:10.2.1", {\
           "packageLocation": "./.yarn/__virtual__/sass-loader-virtual-ab72e81815/0/cache/sass-loader-npm-10.2.1-eb918cbb8a-e5bc4a230b.zip/node_modules/sass-loader/",\
           "packageDependencies": [\
@@ -26083,6 +26091,37 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sass", null],\
             ["sass-embedded", null],\
             ["webpack", "virtual:dc7ef17095c5f1e8830f9ad76055dc7ef8bb7fd3f9b5779ceee7f54abd3962804a35006b42d5df45d00c4fad0714717be4253f938ca8ae00da0c820a3b4caafa#npm:5.73.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/fibers",\
+            "@types/node-sass",\
+            "@types/sass-embedded",\
+            "@types/sass",\
+            "@types/webpack",\
+            "fibers",\
+            "node-sass",\
+            "sass-embedded",\
+            "sass",\
+            "webpack"\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:13.0.0", {\
+          "packageLocation": "./.yarn/__virtual__/sass-loader-virtual-a80133fe70/0/cache/sass-loader-npm-13.0.0-0cbb09f3b3-f7af03813d.zip/node_modules/sass-loader/",\
+          "packageDependencies": [\
+            ["sass-loader", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:13.0.0"],\
+            ["@types/fibers", null],\
+            ["@types/node-sass", null],\
+            ["@types/sass", null],\
+            ["@types/sass-embedded", null],\
+            ["@types/webpack", null],\
+            ["fibers", null],\
+            ["klona", "npm:2.0.5"],\
+            ["neo-async", "npm:2.6.2"],\
+            ["node-sass", null],\
+            ["sass", "npm:1.52.3"],\
+            ["sass-embedded", null],\
+            ["webpack", null]\
           ],\
           "packagePeers": [\
             "@types/fibers",\
@@ -26916,6 +26955,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-is", "npm:18.2.0"],\
             ["react-scripts", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:5.0.1"],\
             ["sass", "npm:1.52.3"],\
+            ["sass-loader", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:13.0.0"],\
             ["styled-components", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:5.3.5"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
@@ -28792,12 +28832,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["update-browserslist-db", [\
-        ["npm:1.0.0", {\
-          "packageLocation": "./.yarn/cache/update-browserslist-db-npm-1.0.0-979b1769a8-16e721afc1.zip/node_modules/update-browserslist-db/",\
+        ["npm:1.0.3", {\
+          "packageLocation": "./.yarn/cache/update-browserslist-db-npm-1.0.3-bd3070ba88-7ffbb87405.zip/node_modules/update-browserslist-db/",\
           "packageDependencies": [\
-            ["update-browserslist-db", "npm:1.0.0"],\
+            ["update-browserslist-db", "npm:1.0.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:4a8a9b105ce610732c027265551ce479422069b814ca943972f1fa93d703af9c4beaa1ecac4563541c3cd0ccb018f550b878f8262c9bb047838cda83d35550aa#npm:1.0.3", {\
+          "packageLocation": "./.yarn/__virtual__/update-browserslist-db-virtual-2eaa34858c/0/cache/update-browserslist-db-npm-1.0.3-bd3070ba88-7ffbb87405.zip/node_modules/update-browserslist-db/",\
+          "packageDependencies": [\
+            ["update-browserslist-db", "virtual:4a8a9b105ce610732c027265551ce479422069b814ca943972f1fa93d703af9c4beaa1ecac4563541c3cd0ccb018f550b878f8262c9bb047838cda83d35550aa#npm:1.0.3"],\
+            ["@types/browserslist", null],\
+            ["browserslist", "npm:4.21.0"],\
             ["escalade", "npm:3.1.1"],\
             ["picocolors", "npm:1.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/browserslist",\
+            "browserslist"\
           ],\
           "linkType": "HARD"\
         }]\

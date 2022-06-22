@@ -24,7 +24,10 @@ module.exports = {
         'gatsby-plugin-mantine',
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sitemap',
-        `gatsby-plugin-sass`,
+        {
+            resolve: `gatsby-plugin-sass`,
+            options: {},
+        },
         'gatsby-plugin-mdx',
         `gatsby-plugin-styled-components`,
         'gatsby-plugin-netlify',
