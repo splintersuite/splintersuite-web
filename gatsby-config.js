@@ -2,6 +2,8 @@ const path = require('path');
 
 module.exports = {
     siteMetadata: {
+        title: `SplinterSuite | Rent your cards with ease`,
+        siteUrl: `https://splintersuite.com`,
     },
     plugins: [
         // {
