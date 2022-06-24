@@ -58,7 +58,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-unused-imports", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:2.0.0"],\
             ["gatsby", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:4.17.0"],\
             ["gatsby-plugin-emotion", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:7.17.0"],\
-            ["gatsby-plugin-google-analytics", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:4.17.0"],\
+            ["gatsby-plugin-google-gtag", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:4.17.0"],\
             ["gatsby-plugin-image", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:2.17.0"],\
             ["gatsby-plugin-manifest", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:4.17.0"],\
             ["gatsby-plugin-mantine", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:4.0.0"],\
@@ -16002,27 +16002,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["gatsby-plugin-google-analytics", [\
+      ["gatsby-plugin-google-gtag", [\
         ["npm:4.17.0", {\
-          "packageLocation": "./.yarn/cache/gatsby-plugin-google-analytics-npm-4.17.0-45b6214eb8-ecd7ed1d56.zip/node_modules/gatsby-plugin-google-analytics/",\
+          "packageLocation": "./.yarn/cache/gatsby-plugin-google-gtag-npm-4.17.0-d3b8d21412-fd9b351b22.zip/node_modules/gatsby-plugin-google-gtag/",\
           "packageDependencies": [\
-            ["gatsby-plugin-google-analytics", "npm:4.17.0"]\
+            ["gatsby-plugin-google-gtag", "npm:4.17.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
         ["virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:4.17.0", {\
-          "packageLocation": "./.yarn/__virtual__/gatsby-plugin-google-analytics-virtual-4a988de833/0/cache/gatsby-plugin-google-analytics-npm-4.17.0-45b6214eb8-ecd7ed1d56.zip/node_modules/gatsby-plugin-google-analytics/",\
+          "packageLocation": "./.yarn/__virtual__/gatsby-plugin-google-gtag-virtual-24ef902a3c/0/cache/gatsby-plugin-google-gtag-npm-4.17.0-d3b8d21412-fd9b351b22.zip/node_modules/gatsby-plugin-google-gtag/",\
           "packageDependencies": [\
-            ["gatsby-plugin-google-analytics", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:4.17.0"],\
+            ["gatsby-plugin-google-gtag", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:4.17.0"],\
             ["@babel/runtime", "npm:7.18.3"],\
             ["@types/gatsby", null],\
             ["@types/react", null],\
             ["@types/react-dom", null],\
             ["gatsby", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:4.17.0"],\
-            ["minimatch", "npm:3.0.4"],\
+            ["minimatch", "npm:3.1.2"],\
             ["react", "npm:17.0.2"],\
-            ["react-dom", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:17.0.2"],\
-            ["web-vitals", "npm:1.1.2"]\
+            ["react-dom", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:17.0.2"]\
           ],\
           "packagePeers": [\
             "@types/gatsby",\
@@ -26933,7 +26932,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-unused-imports", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:2.0.0"],\
             ["gatsby", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:4.17.0"],\
             ["gatsby-plugin-emotion", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:7.17.0"],\
-            ["gatsby-plugin-google-analytics", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:4.17.0"],\
+            ["gatsby-plugin-google-gtag", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:4.17.0"],\
             ["gatsby-plugin-image", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:2.17.0"],\
             ["gatsby-plugin-manifest", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:4.17.0"],\
             ["gatsby-plugin-mantine", "virtual:633661753265262303509b87a45f8ff09bbfc2cd8d549ec5570d22937ebdd56bc687eda6f4dd494447ef2bbcd46b2addc73a9194db794c05574c90fa47f41761#npm:4.0.0"],\
@@ -29311,13 +29310,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["web-vitals", [\
-        ["npm:1.1.2", {\
-          "packageLocation": "./.yarn/cache/web-vitals-npm-1.1.2-8e3860bc35-9207102908.zip/node_modules/web-vitals/",\
-          "packageDependencies": [\
-            ["web-vitals", "npm:1.1.2"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:2.1.4", {\
           "packageLocation": "./.yarn/cache/web-vitals-npm-2.1.4-68bdd9ecb2-03d3f47dbf.zip/node_modules/web-vitals/",\
           "packageDependencies": [\
