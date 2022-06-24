@@ -2,8 +2,6 @@ const path = require('path');
 
 module.exports = {
     siteMetadata: {
-        title: `splintersuite-web-gatsby`,
-        siteUrl: `https://www.yourdomain.tld`,
     },
     plugins: [
         // {
