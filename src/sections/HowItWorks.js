@@ -24,10 +24,11 @@ const HowItWorks = () => {
                 </List>
             </Group>
             <Group className="has-screenshots">
-                <Image src={Content.howItWorksScreenshotTwo} />
+                <Image src={Content.howItWorksScreenshotTwo} alt="Image of settings dashboard inside native app" />
                 <Image
                     src={Content.howItWorksScreenshotOne}
                     className="overlap"
+                    alt="Image of DEC earnings dashboard inside native app"
                 />
             </Group>
         </Container>
