@@ -19,7 +19,10 @@ const Streamline = () => {
                     <Card component="li" key={card.title}>
                         <Card.Section>
                             <Title order={3}>{card.title}</Title>
-                            <Text component="p">{card.body}</Text>
+                            <Text
+                                component="p"
+                                dangerouslySetInnerHTML={{ __html: card.body }}
+                            ></Text>
                         </Card.Section>
                         <Image src={card.image} alt={card.imageAlt} />
                     </Card>
@@ -70,6 +73,9 @@ const CardContainer = styled.ul`
         p {
             color: white;
             font-size: 1.8em;
+        }
+        a {
+            color: ${({ theme }) => theme.colors.primary[5]};
         }
         h3 {
             font-weight: 700;
